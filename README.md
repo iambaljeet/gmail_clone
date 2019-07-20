@@ -2,6 +2,9 @@
 
 Gmail Clone built in flutter.
 
+Screenhot of App:
+![Application Screenshot](https://github.com/iambaljeet/gmail_clone/blob/master/screenshot/screenshot.jpg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
