@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gmail_clone/detail.dart';
 
 void main() => runApp(MyApp());
 
@@ -36,17 +37,17 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.white,
-        child: Icon(
-          Icons.add,
-          color: Colors.blue,
-        ),
-      ),
+          backgroundColor: Colors.white,
+          child: Image.asset(
+            'assets/images/fab_icon.png',
+            width: 25,
+            height: 25,
+          )),
     );
   }
 
   // replace this function with the code in the examples
-  Widget _myListView(BuildContext context) {
+  Widget _myListView(BuildContext buildContext) {
     String imageIndex;
     List list = new List(20);
 
@@ -87,8 +88,16 @@ class ListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.fromLTRB(8.0, paddingTop, 8.0, paddingBottom),
-      child: Row(
-        children: <Widget>[_startWidget(image), _endWidget()],
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => DetailScreen()),
+          );
+        },
+        child: Row(
+          children: <Widget>[_startWidget(image), _endWidget()],
+        ),
       ),
     );
   }
