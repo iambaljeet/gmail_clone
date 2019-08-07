@@ -3,7 +3,7 @@
 Gmail UI Clone built in flutter.
 
 Screenhot of App:
-![Application Screenshot](https://github.com/iambaljeet/gmail_clone/blob/master/screenshot/screenshot.jpg)
+![Application Screenshot](https://github.com/iambaljeet/gmail_clone/blob/master/screenshot/screenshot2.jpg)
 
 Application is non functional. This is a Demo for showing some basic usage of Widgets Like ' Rows, Columns, Padding, ListView Etc'.
 
